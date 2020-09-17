@@ -1,0 +1,60 @@
+table {
+  border: 1px black;
+  border-collapse: collapse;
+}
+table tr td 
+{
+    border: 1px solid black;
+}
+
+tr 
+{
+    height: 100px;
+}
+
+td 
+{
+    width: 100px;
+}
+
+.empty
+{
+  border: none;
+}
+
+.red
+{
+  vertical-align: top;
+  background-color: red;
+}
+
+.orange
+{
+  text-align: center;
+  vertical-align: top;
+  background-color: orange;
+}
+
+.yellow
+{
+  text-align: right;
+  vertical-align: top;
+  background-color: yellow;
+}
+.purple
+{
+  text-align: center;
+  background-color: purple;
+}
+
+.green
+{
+  text-align: right;
+  background-color: green;
+}
+.blue
+{
+  text-align: right;
+  vertical-align: bottom;
+  background-color: blue;
+}
