@@ -1,1 +1,58 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script src="script.js"></script>
+<form action="http://jorr.cs.georgefox.edu/resources/php/echo-form.php" target="_blank" method="GET">
+    <!--Checkboxes-->
+    <label for="yes_homework">Homework?</label>
+    <input type="checkbox" id="yes_homework" name="yes_homework"><br>
+    <label for="no_homework">No Homework?</label>
+    <input type="checkbox" id="no_homework" name="no_homework" checked><br>
+
+    <!--Two text fields, password, submit, reset-->
+    <div>
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name">
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name">
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password"><br>
+
+    </div>
+
+    <!--Radio Button Group with 3 options-->
+    <p>Select your favorite sport:</p>
+    <div>
+        <input type="radio" name="sports" value="Football" id="FB">
+        <label for="FB">Football</label>
+    </div>
+    <div>
+        <input type="radio" name="sports" value="Basketball" id="BB">
+        <label for="BB">Basketball</label>
+    </div>
+    <div>
+        <input type="radio" name="sports" value="Golf" id="GF">
+        <label for="GF">Golf</label><br>
+    </div>
+
+    <!-- A date-->
+    <p>Enter your Birthday</p>
+    <label for="birthday">Birthday date:</label>
+    <input type="date" id="birthday" name="birthday">
+
+    <!-- A number with min and max-->
+    <p>Enter a number between 1 and 10</p>
+    <label for="Number">Number (between 1 and 10):</label>
+    <input type="number" id="Number" name="quantity" min="1" max="10"><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+
+</form>
+</body>
+</html>
