@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Simon Says</title>
+    <link href="simonStyle.css" rel="stylesheet" type="text/css" />
+    
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="simonScript.js"></script>
+
+  </head>
+  
+   <body onload="setUp()">
+     <h1 id="header">SIMON SAYS</h1>
+      <button onclick="startGame()">Start The Game!</button>        
+      
+    <div class="click" id="green" onclick="greenPlay()">
+    </div>
+
+    <div class="click" id="red" onclick="redPlay()">
+    </div>
+
+    <div class="click" id="yellow" onclick="yellowPlay()">
+    </div>
+
+    <div class="click" id="blue" onclick="bluePlay()">
+    </div>
+
+
+  </body>
+</html>

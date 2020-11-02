@@ -1,0 +1,48 @@
+body {
+  background-color:black;
+}
+
+h1 {
+  color:white;
+  text-align: center;
+}
+
+#green {
+  height: 150px;
+  width: 150px;
+  background-color:green;
+  margin:10px auto ;
+  border-radius: 25px;
+}
+
+#red {
+  height: 150px;
+  width: 150px;
+  background-color:red;
+  margin:10px auto;
+  border-radius: 25px;
+
+}
+
+#yellow {
+  height: 150px;
+  width: 150px;
+  background-color:yellow;
+  margin:10px auto;
+  border-radius: 25px;
+
+}
+
+#blue {
+  height: 150px;
+  width: 150px;
+  background-color:blue;
+  margin:10px auto;
+  border-radius: 25px;
+
+}
+
+.dissapear {
+  box-shadow: 0 0 50px white;
+  filter: brightness(225%);
+}
