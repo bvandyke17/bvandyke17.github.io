@@ -2,7 +2,7 @@ var simonArray = [];
   var playerArray = [];
   var continuePlay = 1;
   var totalToPlay = 1;
-  var playTimeout = 325;
+  var playTimeout = 500;
 
 function setUp() 
 {
@@ -16,7 +16,7 @@ function setUp()
   playerArray = [];
   continuePlay = 1;
   totalToPlay = 1;
-  playTimeout = 325;
+  playTimeout = 300;
 }
 
 function startGame() 
@@ -37,7 +37,7 @@ function playValues()
 
 function playColor(color) 
 {
-  if (simonArray.length % 3 == 0)
+  if (simonArray.length % 3 == 0 && playTimeout !=25)
   {
     playTimeout -= 25;
 
@@ -50,38 +50,38 @@ function playColor(color)
 
   if (color == 0)
   {
-    $("#green").addClass("dissapear");
+    $("#green").addClass("played");
 
     setTimeout(function()
     {
-      $("#green").removeClass("dissapear");
+      $("#green").removeClass("played");
     },playTimeout)
   }
 
   else if (color == 1)
   {
-    $("#red").addClass("dissapear");
+    $("#red").addClass("played");
     setTimeout(function () 
     {
-      $("#red").removeClass("dissapear");
+      $("#red").removeClass("played");
     }, playTimeout)
   }
 
   else if (color == 2)
   {
-    $("#yellow").addClass("dissapear");
+    $("#yellow").addClass("played");
     setTimeout(function () 
     {
-      $("#yellow").removeClass("dissapear");
+      $("#yellow").removeClass("played");
     }, playTimeout)
   }
 
   else
   {
-    $("#blue").addClass("dissapear");
+    $("#blue").addClass("played");
     setTimeout(function () 
     {
-      $("#blue").removeClass("dissapear");
+      $("#blue").removeClass("played");
     }, playTimeout)
   }
 
@@ -117,7 +117,7 @@ function bluePlay()
 
 function validatePlay(index) 
 {
-  if (simonArray[index] == playerArray[index] &&simonArray.length == playerArray.length)
+  if (simonArray[index] == playerArray[index])
   {
     setTimeout(function () 
     {
